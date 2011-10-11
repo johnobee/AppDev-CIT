@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,7 +23,7 @@
 			<input type="submit">
 		</form>
 		<hr>
-		List of current Todos (total: ${todos.size()}) :
+		List of current Todos (total: ${fn:length(todos)}) :
 		<table>
 			<c:forEach var="todo" items="${todos}" varStatus="index">
 				<tr	<c:if test="${todo.done }">style="text-decoration: line-through;"</c:if>>
