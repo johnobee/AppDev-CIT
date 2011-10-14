@@ -22,7 +22,7 @@
 			<input type="submit">
 		</form>
 		<hr>
-		List of current Todos (total: ${todos.size()}) :
+		List of current Todos (total: ${fn:length(todos)}) :
 		<table>
 			<c:forEach var="todo" items="${todos}" varStatus="index">
 				<tr	<c:if test="${todo.done }">style="text-decoration: line-through;"</c:if>>
