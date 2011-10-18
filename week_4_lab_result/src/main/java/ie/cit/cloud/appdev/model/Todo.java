@@ -10,6 +10,10 @@ public class Todo {
     private String text;
 
     private boolean done;
+    
+    public Todo() {
+	// empty constructor to enable instantiation via reflection API
+    }
 
     public Todo(String text) {
 	this.text = text;

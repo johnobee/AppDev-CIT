@@ -9,7 +9,7 @@
 	<!-- component scan for @Component classes in specific package -->
 	<context:component-scan base-package="ie.cit.cloud.appdev.web" />
 
-	<!-- annotation driven: registeres default converters (including jackson 
+	<!-- annotation driven: registers default converters (including jackson 
 		converter) -->
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/>

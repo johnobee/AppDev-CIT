@@ -33,4 +33,8 @@ public class TodoService {
     public Todo getTodo(int todoIndex) {
 	return repository.get(todoIndex);
     }
+
+    public int indexOf(Todo todo) {
+	return repository.indexOf(todo);
+    }
 }
